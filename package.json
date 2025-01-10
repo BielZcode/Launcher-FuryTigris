@@ -4,11 +4,12 @@
   "description": "FuryTigris Launcher",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "backend": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Organizacao-FuryTigris/FuryTigris-Source"
+    "url": "git+https://github.com/Organizacao-FuryTigris/FuryTigris-Source.git"
   },
   "author": "BielZcode",
   "license": "MIT",
@@ -16,10 +17,11 @@
     "url": "https://github.com/Organizacao-FuryTigris/FuryTigris-Source/issues"
   },
   "homepage": "https://github.com/Organizacao-FuryTigris/FuryTigris-Source#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
   "devDependencies": {
     "electron": "^33.3.1"
   },
-  "dependencies": {
-    "express": "^4.21.2"
-  }
+  "keywords": []
 }
