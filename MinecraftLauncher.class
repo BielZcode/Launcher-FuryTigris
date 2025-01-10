@@ -1,0 +1,24 @@
+public class MinecraftLauncher {
+    public static void main(String[] args) {
+        try {
+            Process process = Runtime.getRuntime().exec("java -Xms1024M -Xmx4096M " +
+                    "-Djava.library.path=\"./natives\" " +
+                    "-cp \"./libraries/*;./client.jar\" " +
+                    "net.minecraft.client.main.Main " +
+                    "--width 854 --height 480 " +
+                    "--username _ZinhoZin " +
+                    "--version 1.8.8 " +
+                    "--gameDir ./minecraft " +
+                    "--assetsDir ./minecraft/assets " +
+                    "--assetsIndex 1.8.8 " +
+                    "--uuid N/A " +
+                    "--accessToken token " +
+                    "--userType mojang");
+            System.out.println("Minecraft iniciado!");
+
+            process.waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}

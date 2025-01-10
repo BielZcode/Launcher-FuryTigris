@@ -1,0 +1,25 @@
+{
+  "name": "furytigris",
+  "version": "1.0.0",
+  "description": "FuryTigris Launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Organizacao-FuryTigris/FuryTigris-Source"
+  },
+  "author": "BielZcode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Organizacao-FuryTigris/FuryTigris-Source/issues"
+  },
+  "homepage": "https://github.com/Organizacao-FuryTigris/FuryTigris-Source#readme",
+  "devDependencies": {
+    "electron": "^33.3.1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
